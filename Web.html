@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurusan Sistem Informasi</title>
+  <style>
+  
+        /*tombol tiktok*/
+         .btn-tiktok {
+           display: inline-block;
+           
+           background-color: #000;
+           color: white !important;
+           padding: 10px 25px;
+           text-decoration: none;
+           border-radius: 8px;
+           
+           font-weight: bold;
+           font-size: 14px;
+           box-shadow: 0 4px 10px rgba(0,0,0,0,15);
+           transition: 0.3s;
+           margin-top: 10px;
+         }
+         
+         .btn-tiktok:hover {
+           background-color: #333;
+           transform: translateY(-2px);
+         }
+  
+  p {
+  line-height: 1.8; 
+  margin-bottom: 20px;
+  color: #444; 
+}
+
+b {
+  color: #007bff; 
+}
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  /* warna background*/
+  body {
+    background: linear-gradient(135deg,#e3f2fd, #fce4ec);
+  }
+
+    body {
+      margin: 0;
+      padding: 0 25px; 
+      position: relative;
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* 2. TOMBOL LOGIN (POJOK KANAN) */
+    .btn-login {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white !important;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    /* 3. JUDUL & TAG */
+    h1 {
+      padding-top: 85px; 
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .tag {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* 4. GAMBAR & GALERI */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 20px 0;
+    }
+    
+    .galeri figure {
+      margin: 0 0 35px 0;
+    }
+    
+    figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    /* 5. PARAGRAF */
+    p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 30px 0;
+    }
+     /* 6. NAVBAR SCROLL (BARU) */
+        .navbar-scroll {
+          display: flex;
+          overflow-x: auto;
+          white-space: nowrap;
+          
+          /*efek kacanyaa*/
+              background: rgba(255, 255, 255, 0.4);
+              backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);    
+          
+          /*buat nempell*/
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          
+          padding: 15px 0;
+          margin: 0 -25px 30px -25px;
+          padding-left: 25px;
+          gap: 20px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          scrollbar-width: none;
+        }
+        
+        
+        
+    .navbar-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    .nav-item {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .nav-item.active {
+      color: #007bff; 
+    }
+    .nav-item span {
+      background: red;
+      color: white;
+      font-size: 9px;
+      padding: 2px 5px;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
+        
+         /*tombol transparan*/
+       .btn-galeri {
+         display: inline-block;
+         margin-top: 15px;
+         padding: 10px 20px;
+         background: rgba(255, 255, 255, 0.6);
+         backdrop-filter: blur(8px);
+         -webkit-backdrop-filter: blur(8px); 
+         color: #007bff !important;
+         text-decoration: none;
+         border-radius: 12px;
+         font-size: 13px;
+         font-weight: bold;
+         border: 1px solid rgba(255, 255, 255, 0.4);
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05)
+         transition: all 0.3s ease;
+       }
+       
+         .btn-galeri:hover {
+           background: #007bff;
+           color: white !important;
+           transform: translateY(-3px);
+           box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+         }
+         
+        .btn-galeri:hover {
+  transform: translateY(-3px) scale(1.05); 
+}
+ 
+  </style>
+</head>
+<body>
+
+  <a href="#" class="btn-login">Masuk</a>
+
+  <h1>SEJARAH PERKEMBANGAN TEKNIK SISTEM INFORMASI</h1>
+  
+  <div class="tag">
+    #teknologi #sistem-informasi #sejarah
+  </div>
+
+  <nav class="navbar-scroll">
+    <a href="#" class="nav-item active">Terpopuler</a>
+    <a href="#sejarah" class="nav-item">Sejarah</a> 
+    <a href="#kurikulum" class="nav-item">Kurikulum</a>
+    <a href="#" class="nav-item">Event <span>NEW</span></a>
+    <a href="#peluang" class="nav-item">Peluang Kerja</a>
+    <a href="#matkul" class="nav-item">matkul</a>
+    <a href="#tips" class="nav-item">tips Koding</a>
+    <a href="#perbedaan" class="nav-item">perbedaan</a>
+    <a href="#top" class="nav-item">top bahasa</a>
+   </nav>
+
+  <img src="https://portalnews.stekom.ac.id/media/15841/perbedaan-mendasar-antara-sistem-informasi-dan-teknik-informasi.jpg" alt="ilustrasi utama"> 
+
+  <hr/>
+  <h2 id="kurikulum">Apa sih, sistem informasi?</b></h2>
+  <p>Sistem informasi adalah <b>kombinasi terstruktur dari manusia, perangkat keras</b> <i>(hardware)</i>, <b>perangkat lunak</b> <i>(software)</i>, <b>jaringan, dan prosedur yang bekerja sama untuk mengumpulkan, memproses, menyimpan, dan menyebarkan data menjadi informasi yang berguna. Sistem ini mendukung pengambilan keputusan, pengendalian, dan operasional di dalam organisasi.</b> </p>
+  
+  <hr/>
+  <h2 id="sejarah"> Sejarah Singkat Teknik Sistem Informasi</h2>
+  <p>Sejarah Teknik Sistem Informasi bermula dari kebutuhan manusia untuk mengelola data secara efisien, yang <i>berevolusi</i> dari alat hitung mekanis hingga penemuan komputer elektronik pertama pada era 1950-an. Awalnya, bidang ini berfokus pada penggunaan <i>mainframe</i> untuk otomatisasi tugas akuntansi di perusahaan besar, namun seiring munculnya <i>personal computer</i> (PC) di era 1980-an dan internet pada <b>1990-an</b>, fokusnya bergeser menjadi <i>integrasi</i> antara teknologi komputer dan kebutuhan <b>strategi</b> bisnis secara global.</p>
+
+  <p>Saat ini, <i>teknik sistem informasi</i> telah memasuki era <b>digital</b> yang <i>didominasi</i> oleh <i>cloud computing</i>, <i>big data</i>, dan <i>artificial intelligence</i> (AI). Perkembangan ini tidak hanya mengubah cara data <b>disimpan</b>, tetapi juga bagaimana informasi diolah menjadi keputusan strategis yang <i>krusial</i> bagi organisasi modern. Di Indonesia sendiri, sejarah bidang ini terus berkembang melalui jalur <b>pendidikan</b> formal yang mencetak tenaga ahli untuk mendukung <i>transformasi digital</i> di berbagai sektor <b>industri</b>.</p>
+
+  <br/>
+  
+ <h2 id="tips"> Tips belajar koding bagi pemula</h2>
+ <p>Bagi kamu yang baru mau belajar <b>coding</b>, kalian jangan langsung membuat proyek yang besar,rumit,dan kompleks,belajar koding bukan cuma menghafal dan mempelajari <i>syntax</i> dan <i>tag</i>,dalam coding kamu di tuntut untuk <b>berfikir</b> runtut dan diluar kotak(Logika).</p>
+ 
+ <p><b>Trik</b> agar ngoding tidak bingung atau rumit,sebelum membuat sebaiknya membuat <b>diagram alur</b>(flowchart).fungsi flowchart itu <b>"untuk membuat peta atau alur yang akan dibuat oleh seorang programmer sebelum terjun ke dunia kode"</b>,di flowchart kamu harus berfikir runtut dan sistematis,agar alur yang dibuat tidak rumit dan berantakan.</p>
+ 
+ <p>Contoh flowchart :"membuat sistem antrean kantin sekolah", saat ingin membuat kalian harus cari masalah,solusi, dan membuat solusi yang efektif, fleksibel. jika sudah menemukan semua poin diatas, langkah selanjutnya itu kamu terjemahin ke bahasa flowchart, mulai dari bentuk oval, persegi panjang, belah ketupat, jajar genjang, dan diakhiri dengan end(selesai).</p>
+ 
+  <div class="galeri" id="peluang">
+    <figure>
+      <img src="https://fst.buddhidharma.ac.id/uploads/konten/mD9vlWg6CwzI6C3z6cBYzDA7apXGkkeVfRrnWOH4.jpg">
+      <figcaption>
+        <a href="https://fst.buddhidharma.ac.id/view/konten/profesi_lulusan_prodi_sistem_informasi" target="_blank" class="btn-galeri"><b>daftar peluang kerja lulusan sistem informasi</b></a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <figure id="matkul">
+      <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/BA%20-%20Pojok%20Kampus%20-%20Mata%20Kuliah%20dan%20Kampus%20Jurusan%20Sistem%20Informasi.jpg">
+      <figcaption>
+        <a href =https://cdn-web.ruangguru.com/landing-pages/assets/hs/BA%20-%20Pojok%20Kampus%20-%20Mata%20Kuliah%20dan%20Kampus%20Jurusan%20Sistem%20Informasi.jpg" target="_blank" class="btn-galeri"> <b>gambaran mata kuliah jurusan sistem informasi</b></a>
+      </figcaption>
+    </figure>
+    
+      <figure id="perbedaan">
+      <img src="https://assets.kompasiana.com/items/album/2023/12/27/perbedaan-antara-sistem-informasi-dan-teknik-informatika-658b972912d50f69bb1d5c42.jpg?t=o&v=736&x=414">
+      <figcaption> 
+        <a href ="https://www.kompasiana.com/image/nailywhello2953/658b97e4c57afb018536f3f3/perbedaan-antara-sistem-informasi-dan-teknik-informatika?page=1" target="_blank" class="btn-galeri"> <b>perbedaan antara sistem informasi dan teknik informatika</b></a>
+      </figcaption>
+    </figure>
+
+    <figure>
+    <figure id="top bahasa">
+      <img src="bahasa-pemrogramman-populer.png">
+      <figcaption> 
+      <a href="https://intiphp.com/id/post/10-bahasa-pemrograman-populer-menurut-intiphp-2020" target="_blank" class="btn-galeri">
+      <b>daftar bahasa pemrograman yang populer</b></a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <br/>
+         <h4>jika ingin mencari informasi lebih lanjut,klik link dibawah ini:</h4>
+              <a href="https://www.tiktok.com/@wawan_wnya_wni?_r=1&_t=ZS-95lWVbivpPZ" target="_blank"
+              class="btn-tiktok">Akun tiktok saya</a>
+  <br/><br/>
+©<i>copyright2026.ind.wwn.com</i>
+</body>
+</html>
